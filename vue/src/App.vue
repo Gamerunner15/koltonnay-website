@@ -31,15 +31,15 @@ h1, h2 {
   font-family: $primary-font;
 }
 
-p {
+p, li {
   font-family: $secondary-font;
+  font-weight: 500;
 }
 
 a {
   text-decoration: none;
 }
 .no-scroll {
-    position:-webkit-sticky;
     position: sticky;
     top: 0;
 }

@@ -3,11 +3,11 @@
       <header>
           <div id="left">
             <i v-bind:class="{iHide: menuOpen}" v-on:click="toggleMenu()" class="fa fa-angle-double-right hoverable" style="font-size:40px;"></i>
-            <h1>Kolton Nay</h1>
+            <router-link :to="{ name: 'Home' }" class="hoverable"><h1>Kolton Nay</h1></router-link>
           </div>
           <div id="right">
             <h2 class="hoverable" v-on:click="toggleMenu()">Technical Projects</h2>
-            <h2 class="hoverable">Work Experience</h2>
+            <router-link :to="{ name: 'work-experience' }"><h2 class="hoverable">Work Experience</h2></router-link>
             <h2 class="hoverable">About</h2>
           </div>
       </header>
@@ -100,7 +100,7 @@ h1 {
     cursor: pointer;
 }
 
-.hoverable:hover, .hoverable:focus {
+.hoverable:hover {
     color:$teal;
     transform: scale(1.1);
 }
