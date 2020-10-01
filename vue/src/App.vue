@@ -11,6 +11,19 @@ $midnight-purple: #702670;
 $primary-font: 'Cairo', sans-serif;
 $secondary-font: 'Lora', serif;
 
+//FoxChat Styles
+:root{
+  --main-color: #095781;
+  --secondary-color: #ffffff;
+  --border-color: #00000027;
+  --recieved-bubble-color: #0D81BF;
+  --sent-bubble-color: #0CB07C;
+  --chatbot-text-input-color: #495057;
+  --close-button-color: rgb(236, 72, 43);
+  --hover-color: #62c2e6;
+  --background-color: #fafafa;
+}
+
 * {
   margin:0px;
 }
@@ -25,6 +38,13 @@ p {
 a {
   text-decoration: none;
 }
-
-
+.no-scroll {
+    position:-webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.scroll{
+    overflow:auto;
+    background-color: var(--background-color);
+}
 </style>

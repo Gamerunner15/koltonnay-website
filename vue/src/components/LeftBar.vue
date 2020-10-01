@@ -1,11 +1,11 @@
 <template>
   <div id="full-sidebar" v-bind:class="{openSidebar: menuOpen, closedSidebar: !menuOpen}">
       <i id="closebtn" v-on:click="toggleMenu()" class="fa fa-times-circle hoverable"></i>
-      
       <div class="projects">
+        <a href="#"><img class="tiny-image" src="..\assets\MainPicture.jpg" /></a>
         <h1>Explore Kolton's Projects:</h1>
-        <a class="hoverable" href="#"><h2>FoxChat</h2></a>
-        <a class="hoverable" href="#"><h2>AdoptMe</h2></a>
+        <router-link :to="{ name: 'fox-chat-home' }" class="hoverable"><h2>FoxChat</h2></router-link>
+        <router-link :to="{ name: 'test-view' }" class="hoverable"><h2>AdoptMe</h2></router-link>
         <a class="hoverable" href="#"><h2>TE Alumni Portal</h2></a>
         <a class="hoverable" href="#"><h2>Your Case Manager</h2></a>
       </div>
@@ -36,6 +36,12 @@ $midnight-purple: #702670;
 $primary-font: 'Cairo', sans-serif;
 $secondary-font: 'Lora', serif;
 
+.tiny-image {
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid $teal;
+    box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.25);
+}
 .openSidebar {
     width: 300px;
     height: 100%;
