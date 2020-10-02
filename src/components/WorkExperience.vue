@@ -1,9 +1,10 @@
 <template>
   <div>
-    <h1 class="work-title">Work Experience</h1>
+    <h1 id="work-title">Work Experience</h1>
     <div class="timeline">
         <!--Job 1-->
       <div class="job-experience">
+        <div class="circle"><i class="fa fa-circle"></i></div>
         <div class="content">
           <div class="headline">
             <h2 class="job-title">Assistant Teacher, <em>Dublin Latchkey</em></h2>
@@ -19,6 +20,7 @@
       </div>
       <!--Job 2-->
       <div class="job-experience">
+        <div class="circle"><i class="fa fa-circle"></i></div>
         <div class="content">
           <div class="headline">
             <h2 class="job-title">Customer Success Advocate, <em>Bold Penguin</em></h2>
@@ -35,6 +37,7 @@
       </div>
       <!--Job 3-->
       <div class="job-experience">
+        <div class="circle"><i class="fa fa-circle"></i></div>
         <div class="content">
           <div class="headline">
             <h2 class="job-title">Mental Health Case Manager, <em>North Community Counseling Center</em></h2>
@@ -50,6 +53,7 @@
       </div>
       <!--Job 4-->
       <div class="job-experience">
+        <div class="circle"><i class="fa fa-circle"></i></div>
         <div class="content">
           <div class="headline">
             <h2 class="job-title">Writing Correspondent, <em>The Times Reporter</em></h2>
@@ -79,21 +83,24 @@ $teal: #5affd5;
 $midnight-purple: #702670;
 $primary-font: "Cairo", sans-serif;
 $secondary-font: "Lora", serif;
+$primary-color: #fef65b;
+$secondary-color: gray;
+$tertiary-color: #5affd5;
 
-.work-title {
-    margin-left: 40px;
+#work-title {
+    text-align: center;
 }
 .timeline {
   position: relative;
   max-width: 1200px;
-  margin-left: 50px;
+  margin-left: 200px;
 }
 
 .timeline::after {
   content: "";
   position: absolute;
   width: 6px;
-  background-color: $midnight-purple;
+  background-color: $secondary-color;
   top: 0;
   bottom: 0;
   left: 0%;
@@ -114,33 +121,39 @@ $secondary-font: "Lora", serif;
   border-radius: 6px;
   padding-bottom: 10px;
 }
-//Circles
-.job-experience::after {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  right: 1189px;
-  background-color: white;
-  border: 4px solid $midnight-purple;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
+.circle {
+  font-size: 30px;
+  color: $secondary-color;
+  float: left;
+  margin-left: -52.5px;
 }
+//Circles
+// .job-experience::after {
+//   content: "";
+//   position: absolute;
+//   width: 15px;
+//   height: 15px;
+//   right: 1189px;
+//   background-color: white;
+//   border: 4px solid $secondary-color;
+//   top: 15px;
+//   border-radius: 50%;
+//   z-index: 1;
+// }
 
 //Arrow Points
-.job-experience::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid $midnight-purple;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent $dodie-yellow transparent transparent;
-}
+// .job-experience::before {
+//   content: " ";
+//   height: 0;
+//   position: absolute;
+//   top: 22px;
+//   width: 0;
+//   z-index: 1;
+//   left: 30px;
+//   border: medium solid $midnight-purple;
+//   border-width: 10px 10px 10px 0;
+//   border-color: transparent $dodie-yellow transparent transparent;
+// }
 
 .headline {
   display: flex;

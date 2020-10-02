@@ -3,11 +3,11 @@
       <div class="grid-container">
         <div class="top-left"><a href="https://LinkedIn.com/in/koltonnay" target="_blank"><i class="fa fa-linkedin-square hoverable"></i></a></div>
         <div class="middle-left"><a href="https://Github.com/Gamerunner15" target="_blank"><i class="fa fa-github hoverable"></i></a></div>
-        <div class="bottom-left"><i class="fa fa-file hoverable"></i></div>
+        <div class="bottom-left"><a href="..\assets\Resume.pdf" download><i class="fa fa-file hoverable"></i></a></div>
         <div class="image-div"><img class="main-image" src="..\assets\MainPicture.jpg" /></div>
         <div class="top-right"><a href="https://twitter.com/Gamerunner15" target="_blank"><i class="fa fa-twitter hoverable"></i></a></div>
-        <div class="middle-right"><a href="#"><i class="fa fa-times hoverable"></i></a></div>
-        <div class="bottom-right"><a href="/about"><i class="fa fa-info-circle hoverable"></i></a></div>
+        <div class="middle-right"><a href="https://www.instagram.com/gamerunner15/" target="_blank"><i class="fa fa-instagram hoverable"></i></a></div>
+        <div class="bottom-right"><a href="#/about"><i class="fa fa-info-circle hoverable"></i></a></div>
       </div>
   </div>
 </template>
@@ -21,10 +21,12 @@ export default {
 
 <style lang="scss">
 $dodie-yellow: #fef65b;
-$teal: #5affd5;
 $midnight-purple: #702670;
 $primary-font: 'Cairo', sans-serif;
 $secondary-font: 'Lora', serif;
+$primary-color: #fef65b;
+$secondary-color: rgb(150, 161, 161);
+$tertiary-color: #519483;
 
 .grid-container {
     width: 90%;
@@ -40,6 +42,9 @@ $secondary-font: 'Lora', serif;
     grid-column-gap: 20px;
     i {
         font-size: 120px;
+        background-color: $primary-color;
+        border: 25px solid $primary-color;
+        border-radius: 50px;
     }
 }
 
@@ -49,7 +54,7 @@ $secondary-font: 'Lora', serif;
 }
 .main-image {
     border-radius: 50%;
-    border: 3px solid $teal;
+    border: 3px solid $primary-color;
     box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.25);
     max-width: 100%;
     height: auto;

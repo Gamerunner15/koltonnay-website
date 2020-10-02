@@ -7,8 +7,8 @@
           </div>
           <div id="right">
             <h2 class="hoverable" v-on:click="toggleMenu()">Technical Projects</h2>
-            <router-link :to="{ name: 'work-experience' }"><h2 class="hoverable">Work Experience</h2></router-link>
-            <h2 class="hoverable">About</h2>
+            <router-link :to="{ name: 'work-experience-view' }"><h2 class="hoverable">Work Experience</h2></router-link>
+            <router-link :to="{ name: 'about-view' }"><h2 class="hoverable">About</h2></router-link>
           </div>
       </header>
       <div class="banner">
@@ -35,15 +35,12 @@ export default {
 
 <style lang="scss">
 $dodie-yellow: #fef65b;
-$teal: #5affd5;
 $midnight-purple: #702670;
 $primary-font: 'Cairo', sans-serif;
 $secondary-font: 'Lora', serif;
-
-// #all-header {
-//     position: fixed;
-//     width: 100%;
-// }
+$primary-color: #fef65b;
+$secondary-color: rgb(150, 161, 161);
+$tertiary-color: #31d1a9;
 
 header {
     display: flex;
@@ -78,7 +75,7 @@ header {
 
 .banner {
     height: 50px;
-    background-color:$midnight-purple;
+    background-color:$secondary-color;
     color:$dodie-yellow;
     display: flex;
     flex-direction: row;
@@ -91,17 +88,17 @@ h1 {
 }
 
 .iHide {
-    color:$dodie-yellow !important;
+    color: $primary-color !important;
 }
 
 .hoverable {
-    color: $midnight-purple;
+    color: $secondary-color;
     transition: all .2s ease-in-out;
     cursor: pointer;
 }
 
 .hoverable:hover {
-    color:$teal;
+    color:$tertiary-color;
     transform: scale(1.1);
 }
 

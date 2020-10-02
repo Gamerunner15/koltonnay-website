@@ -10,7 +10,9 @@ $teal: #5affd5;
 $midnight-purple: #702670;
 $primary-font: 'Cairo', sans-serif;
 $secondary-font: 'Lora', serif;
-
+$primary-color: #fef65b;
+$secondary-color: rgb(150, 161, 161);
+$tertiary-color: #31d1a9;
 //FoxChat Styles
 :root{
   --main-color: #095781;

@@ -15,7 +15,7 @@ import LeftBar from '@/components/LeftBar.vue'
 
 
 export default {
-  name: 'Home',
+  name: 'work-experience-view',
   components: {
     TheHeader,
     WorkExperience,

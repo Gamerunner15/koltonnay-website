@@ -2,7 +2,8 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import FoxChatHome from '../views/FoxChatHome.vue'
 import TestView from '../views/TestView.vue'
-import WorkExperience from '../views/WorkExperience.vue'
+import WorkExperienceView from '../views/WorkExperienceView.vue'
+import AboutView from '../views/AboutView.vue'
 
 const routes = [
   {
@@ -22,8 +23,13 @@ const routes = [
   },
   {
     path: '/workexperience',
-    name: 'work-experience',
-    component: WorkExperience
+    name: 'work-experience-view',
+    component: WorkExperienceView
+  },
+  {
+    path: '/about',
+    name: 'about-view',
+    component: AboutView
   }
 ]
 
