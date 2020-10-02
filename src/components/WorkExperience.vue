@@ -67,6 +67,22 @@
           </div>
         </div>
       </div>
+      <!--Job 5-->
+      <div class="job-experience">
+        <div class="circle"><i class="fa fa-circle"></i></div>
+        <div class="content">
+          <div class="headline">
+            <h2 class="job-title">Program Assistant, <em>Mennonite Central Committee United Nations Office</em></h2>
+            <h3 class="location">New York, NY</h3>
+          </div>
+          <div class="accomplishments">
+            <ul>
+              <li>Facilitated UN events for MCC and the NGO Working Group on Food and Hunger.</li>
+              <li>Acted as liaison to the North Korean Ambassadors in efforts to build a better relationship and promote sustainable agriculture.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

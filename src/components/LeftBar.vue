@@ -5,8 +5,8 @@
         <router-link :to="{ name: 'Home' }"><img class="tiny-image hoverable" src="..\assets\MainPicture.jpg" /></router-link>
         <h1>Explore Kolton's Projects:</h1>
         <router-link :to="{ name: 'fox-chat-home' }" class="project-button hoverable"><h2>FoxChat</h2></router-link>
-        <router-link :to="{ name: 'test-view' }" class="project-button hoverable"><h2>AdoptMe</h2></router-link>
-        <router-link :to="{ name: 'test-view' }" class="project-button hoverable"><h2>TE Alumni Portal</h2></router-link>
+        <router-link :to="{ name: 'adopt-me-home' }" class="project-button hoverable"><h2>AdoptMe</h2></router-link>
+        <a href="http://alumni.techelevator.com/" target="_blank" class="project-button hoverable"><h2>TE Alumni Portal</h2></a>
         <router-link :to="{ name: 'test-view' }" class="project-button hoverable"><h2>Your Case Manager</h2></router-link>
       </div>
   </div>
@@ -31,13 +31,12 @@ export default {
 
 <style lang="scss">
 $dodie-yellow: #fef65b;
-$teal: #5affd5;
 $midnight-purple: #702670;
 $primary-font: 'Cairo', sans-serif;
 $secondary-font: 'Lora', serif;
 $primary-color: #fef65b;
 $secondary-color: rgb(150, 161, 161);
-$tertiary-color: #5affd5;
+$tertiary-color: #519483;
 
 .tiny-image {
     width: 50px;
@@ -90,8 +89,8 @@ $tertiary-color: #5affd5;
     top: 25%; 
     text-align: center;
     h2:hover, h2:focus {
-        color:$teal;
-        border-color: $teal;
+        color: $tertiary-color;
+        border-color: $tertiary-color;
     }
     h2{
         border: 2px solid $secondary-color;

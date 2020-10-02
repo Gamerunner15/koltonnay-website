@@ -4,6 +4,7 @@ import FoxChatHome from '../views/FoxChatHome.vue'
 import TestView from '../views/TestView.vue'
 import WorkExperienceView from '../views/WorkExperienceView.vue'
 import AboutView from '../views/AboutView.vue'
+import AdoptMeHome from '../views/AdoptMeHome.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/about',
     name: 'about-view',
     component: AboutView
+  },
+  {
+    path: '/adoptme',
+    name: 'adopt-me-home',
+    component: AdoptMeHome
   }
 ]
 

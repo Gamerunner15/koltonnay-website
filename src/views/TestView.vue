@@ -1,14 +1,18 @@
 <template>
   <div>
-      <main-body />
+      <the-header />
+      <left-bar />
+      <h1 style="text-align: center;">Testing Testing 1 2 3</h1>
   </div>
 </template>
 
 <script>
-import MainBody from '@/components/MainBody.vue'
+import TheHeader from '@/components/TheHeader.vue'
+import LeftBar from '@/components/LeftBar.vue'
 export default {
     components: {
-        MainBody
+        TheHeader,
+        LeftBar
     }
 }
 </script>

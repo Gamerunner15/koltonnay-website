@@ -24,7 +24,7 @@ $primary-font: 'Cairo', sans-serif;
 $secondary-font: 'Lora', serif;
 $primary-color: #fef65b;
 $secondary-color: rgb(150, 161, 161);
-$tertiary-color: #5affd5;
+$tertiary-color: #519483;
 
 footer {
     display: flex;
