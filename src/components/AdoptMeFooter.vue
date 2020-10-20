@@ -113,6 +113,7 @@ $font-weight-h3: bold;
   justify-content: space-evenly;
   align-items: center;
   padding-top: 10px;
+  padding-left: 20px;
   a {
     color: white;
   }

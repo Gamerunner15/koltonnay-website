@@ -1,9 +1,7 @@
 <template>
   <div>
     <div class="main-head">
-      <div id="left">
-            <i v-bind:class="{iHide: menuOpen}" v-on:click="toggleMenu()" class="fa fa-angle-double-right menu-opener" style="font-size:40px;"></i>
-      </div>
+      <i v-bind:class="{iHide: menuOpen}" v-on:click="toggleMenu()" class="fa fa-angle-double-right menu-opener"></i>
       <router-link :to="{ name: 'fox-chat-home' }">
         <div id="logo-title">
           <img class="logo" src="../assets/foxtrot_t.png" />
@@ -73,7 +71,7 @@
         v-on:click="mobileHidden = true, loginHidden = true, registerHidden = true"
       >
         <p>
-          <i class="fas fa-times"></i>
+          <i class="fa fa-times"></i>
         </p>
       </div>
     </div>
@@ -252,12 +250,16 @@ export default {
 
 .main-head {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   height: 90px;
   background-color: var(--main-color);
+  .menu-opener {
+    padding: 10px 10px 10px 20px;
+    font-size: 40px;
+  }
 }
 
 #logo-title {
@@ -428,8 +430,33 @@ export default {
 }
 
 @media screen and (max-width: 400px) {
-  .title {
-    font-size: 12vw;
+  .main-head {
+    #left {
+      i {
+        padding: 0px 0px 0px 0px;
+      }
+    }
   }
+  .logo {
+  width: auto;
+  height: 60px;
+  padding-right: 10px;
+}
+  #logo-title {
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: flex-start;
+  flex-grow: 0;
+  min-width: fit-content;
+  flex-wrap: nowrap;
+}
+  .title {
+  font-size: 40px;
+  white-space: nowrap;
+  padding-left: 0px;
+}
 }
 </style>

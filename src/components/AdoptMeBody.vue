@@ -111,7 +111,15 @@ $font-weight-h3: bold;
   max-width: 100px;
 }
 
-.body-row, .body-row-2 {
+.body-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body-row-2 {
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
@@ -185,8 +193,17 @@ $font-weight-h3: bold;
 #friend {
   display: none;
 }
+
 //Large Screens
 @media screen and (min-width: 900px) {
+  .body-row-2 {
+  margin-top: 150px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
   #banner {
     height: 500px;
   }

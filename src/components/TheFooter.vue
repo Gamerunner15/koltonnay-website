@@ -44,4 +44,25 @@ footer {
   height: 25px;
   background-color: $secondary-color;
 }
+
+@media screen and (max-width: 425px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    background-color: $dodie-yellow;
+    color: $secondary-color;
+    a {
+      color: white;
+      font-family: Lora;
+    }
+    p {
+      text-align: center;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+}
+}
 </style>

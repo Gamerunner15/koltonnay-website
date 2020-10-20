@@ -3,11 +3,11 @@
 <div class="container adoptme">
     <div class="header">
       <i v-bind:class="{iHide: menuOpen}" v-on:click="toggleMenu()" class="fa fa-angle-double-right menu-opener" style="font-size:40px;"></i>
-        <div id="left">
+        <div id="pup-left">
                 <img id="logo" src="..\assets\logo.png" alt="Puppy Logo">
                 <h1 id="title">Adoptme.Org</h1>
         </div>
-        <div id="right">
+        <div id="pup-right">
                 <img src="..\assets\down-caret.png" id='hamburger' v-on:click="toggleMobileMenu()">
                 <a class="menu-button" ><h2>What We Do</h2></a>
                 <a class="menu-button" ><h2>Who We Are</h2></a>
@@ -86,19 +86,28 @@ $font-weight-h3: bold;
     display: flex;
     flex: 1;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: $color-red;
     height: 100px;
     text-align: center;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    i {
+      padding-left: 20px;
+      padding-right: 10px;
+    }
+    #left {
+      h1 {
+      font-size: 20px;
+    }
+    }
 }
-#left {
+#pup-left {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 #logo {
     width: 40px;
@@ -114,6 +123,7 @@ $font-weight-h3: bold;
 #hamburger {
     width: 30px;
     filter: invert(100%);
+    margin-left: 20px;
     margin-right: 20px;
     cursor: pointer;
 }
