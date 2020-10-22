@@ -102,6 +102,7 @@ p {
 .feature-photo {
   width: 100%;
   border-bottom: 5px solid $dodie-yellow;
+  border-radius: 6px;
 }
 
 .caption {

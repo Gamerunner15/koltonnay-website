@@ -2,8 +2,8 @@
 <template>
 <div class="container adoptme">
     <div class="header">
-      <i v-bind:class="{iHide: menuOpen}" v-on:click="toggleMenu()" class="fa fa-angle-double-right menu-opener" style="font-size:40px;"></i>
         <div id="pup-left">
+                <i v-bind:class="{iHide: menuOpen}" v-on:click="toggleMenu()" class="fa fa-angle-double-right menu-opener" style="font-size:40px;"></i>
                 <img id="logo" src="..\assets\logo.png" alt="Puppy Logo">
                 <h1 id="title">Adoptme.Org</h1>
         </div>
@@ -84,11 +84,10 @@ $font-weight-h3: bold;
 
 .header {
     display: flex;
-    flex: 1;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     background-color: $color-red;
-    height: 100px;
+    height: 50px;
     text-align: center;
     align-items: center;
     padding-top: 10px;
@@ -112,13 +111,16 @@ $font-weight-h3: bold;
 #logo {
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 .menu-button {
     display: none;
+    cursor: pointer;
 }
 #title {
     color: white;
     padding-left: 10px;
+    cursor: pointer;
 }
 #hamburger {
     width: 30px;
@@ -156,9 +158,11 @@ $font-weight-h3: bold;
 //Large Screens
 @media screen and (min-width: 900px) {
     .header {
-        padding-right: 60px;
-        padding-left: 60px;
         align-items: center;
+        height: 100px;
+        i {
+          padding-right: 30px;
+        }
     }
     .menu-button {
         display: inline-block;
