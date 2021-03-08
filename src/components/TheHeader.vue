@@ -24,7 +24,7 @@
     </header>
     <div class="banner">
       <h2>Full Stack Java Developer</h2>
-      <h2>Currently Seeking Work - Columbus, OH</h2>
+      <h2>Software Engineer - Revel IT</h2>
     </div>
   </div>
 </template>

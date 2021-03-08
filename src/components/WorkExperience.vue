@@ -2,6 +2,29 @@
   <div>
     <h1 id="work-title">Professional Experience</h1>
     <div class="timeline">
+      <!--Job 0-->
+      <div class="job-experience">
+        <div class="circle"><i class="fa fa-circle"></i></div>
+        <div class="content">
+          <div class="headline">
+            <div class="title-employer">
+              <h2 class="job-title">Software Engineer @</h2>
+              <h2><em>Revel IT (Cardinal Health)</em></h2>
+            </div>
+            <h3 class="location">Dublin, OH</h3>
+          </div>
+          <div class="accomplishments">
+            <ul>
+              <li>
+                Contribute regularly to an Agile team of developers by pulling cards, making Pull Requests, and fixing bugs.
+              </li>
+              <li>
+                Collaborate with UI, UX, and BAs to develop the best possible product that meets the business owner’s needs.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <!-- Tech Elevator Experience-->
       <div class="job-experience">
         <div class="circle"><i class="fa fa-circle"></i></div>
